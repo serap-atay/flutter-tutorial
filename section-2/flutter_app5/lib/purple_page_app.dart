@@ -7,7 +7,7 @@ class PurplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.purple,
         title: Text("PurplePage App" ),
       ),
       body: Center(

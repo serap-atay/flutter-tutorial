@@ -7,7 +7,7 @@ class YellowPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.yellow,
         title: Text("YellowPage App" ),
       ),
       body: Center(
