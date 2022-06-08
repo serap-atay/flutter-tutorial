@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app4/card_listTile.dart';
-import 'package:flutter_app4/listview_use.dart';
+import 'package:flutter_app4/gridview_use.dart';
+// import 'package:flutter_app4/card_listTile.dart';
+import 'package:flutter_app4/listview_layout_problems.dart';
+// import 'package:flutter_app4/listview_use.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 void main(){
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: listviewuse(),
+      home: GridViewUse(),
       builder: EasyLoading.init(),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
@@ -38,6 +39,9 @@ class listviewuse extends StatelessWidget {
                   dismissOnTap: true);
               print("Eleman Tıklandı");
             },
+            onLongPress: () {
+              alertDialog(context, s);
+            },
             title: Text(s.name),
             subtitle: Text(s.surname),
             leading: CircleAvatar(
@@ -72,6 +76,39 @@ class listviewuse extends StatelessWidget {
               ))
           .toList(),
     );
+  }
+
+  void alertDialog(BuildContext context, Student s) {
+    // showCupertinoDialog(context: context, builder: builder) => IOS için
+    showDialog(
+        barrierDismissible: false, // boşuğa dokununca dialogdan çıkmayı önler
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("${s.name} ${s.surname}"),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: [
+                  Text("Deniz yılmaz" * 100),
+                  Text("Deniz yılmaz" * 100),
+                  Text("Deniz yılmaz" * 100),
+                ],
+              ),
+            ),
+            actions: [
+              ButtonBar(
+                children: [
+                  TextButton(
+                      onPressed: () {
+                        Navigator.pop(context); //bir önceki contexte gider
+                      },
+                      child: Text("Kapat")),
+                  TextButton(onPressed: () {}, child: Text("Tamam")),
+                ],
+              )
+            ],
+          );
+        });
   }
 }
 
