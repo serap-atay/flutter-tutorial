@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app4/customscrollview.dart';
 import 'package:flutter_app4/gridview_use.dart';
 // import 'package:flutter_app4/card_listTile.dart';
 import 'package:flutter_app4/listview_layout_problems.dart';
@@ -31,8 +32,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: GridViewUse(),
+      home: CustomScrollViewUse(),
       builder: EasyLoading.init(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
     );
   }
 }
