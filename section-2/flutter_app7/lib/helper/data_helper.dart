@@ -31,9 +31,6 @@ class DataHelper {
     }
   }
 
-  static List<int> _tumKrediler() {
-    return List.generate(10, (index) => index + 1).toList();
-  }
 
   static List<DropdownMenuItem<double>> tumDersHarfleri() {
     return _createDersHarfNotlari()
