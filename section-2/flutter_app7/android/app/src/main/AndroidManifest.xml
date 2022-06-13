@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_dinamik_not">
+    package="com.example.movieapp">
    <application
-        android:label="flutter_dinamik_not"
+        android:label="movieapp"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
